@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - BrightWave Digital LLC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <h2>BrightWave Digital</h2>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link cta-button">Get Started</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <h1>Our Portfolio</h1>
+                <p>Discover how we've helped businesses achieve remarkable digital growth and success</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>Portfolio</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web-development">Web Development</button>
+                <button class="filter-btn" data-filter="seo">SEO</button>
+                <button class="filter-btn" data-filter="social-media">Social Media</button>
+                <button class="filter-btn" data-filter="ppc">PPC Campaigns</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="web-development seo">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>TechStart Solutions</h3>
+                                <p>Complete website redesign and SEO optimization</p>
+                                <a href="#" class="portfolio-link" data-project="techstart">View Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="social-media ppc">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Local Eats Restaurant</h3>
+                                <p>Social media marketing and PPC campaigns</p>
+                                <a href="#" class="portfolio-link" data-project="localeats">View Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="branding web-development">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Fashion Forward</h3>
+                                <p>Brand identity and e-commerce website</p>
+                                <a href="#" class="portfolio-link" data-project="fashionforward">View Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="seo web-development">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Elite Real Estate</h3>
+                                <p>Real estate website with advanced SEO</p>
+                                <a href="#" class="portfolio-link" data-project="eliterealestate">View Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="ppc social-media">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>FitLife Gym</h3>
+                                <p>Digital marketing campaign for fitness center</p>
+                                <a href="#" class="portfolio-link" data-project="fitlife">View Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item" data-category="branding web-development">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>EduTech Academy</h3>
+                                <p>Educational platform branding and development</p>
+                                <a href="#" class="portfolio-link" data-project="edutech">View Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Case Studies</h2>
+                <p>Deep dive into our most successful projects and the strategies that drove results</p>
+            </div>
+
+            <!-- Case Study 1 -->
+            <div class="case-study">
+                <div class="case-study-content">
+                    <div class="case-study-text">
+                        <div class="case-study-header">
+                            <h3>TechStart Solutions</h3>
+                            <span class="case-study-category">Web Development & SEO</span>
+                        </div>
+                        <div class="case-study-challenge">
+                            <h4>The Challenge</h4>
+                            <p>TechStart Solutions had an outdated website that wasn't converting visitors and ranked poorly on search engines. They needed a complete digital transformation to compete in their market.</p>
+                        </div>
+                        <div class="case-study-solution">
+                            <h4>Our Solution</h4>
+                            <p>We redesigned their website with a modern, user-friendly interface and implemented a comprehensive SEO strategy targeting high-value keywords in their industry.</p>
+                        </div>
+                        <div class="case-study-results">
+                            <h4>Results</h4>
+                            <div class="results-grid">
+                                <div class="result-item">
+                                    <span class="result-number">300%</span>
+                                    <span class="result-label">Increase in Traffic</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">150%</span>
+                                    <span class="result-label">More Conversions</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">85%</span>
+                                    <span class="result-label">Faster Load Time</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-study-image">
+                        <div class="case-study-mockup">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="case-study">
+                <div class="case-study-content reverse">
+                    <div class="case-study-text">
+                        <div class="case-study-header">
+                            <h3>Local Eats Restaurant</h3>
+                            <span class="case-study-category">Social Media & PPC</span>
+                        </div>
+                        <div class="case-study-challenge">
+                            <h4>The Challenge</h4>
+                            <p>A local restaurant struggling with low foot traffic and limited online presence needed to attract more customers and increase brand awareness in their community.</p>
+                        </div>
+                        <div class="case-study-solution">
+                            <h4>Our Solution</h4>
+                            <p>We created engaging social media content showcasing their dishes and implemented targeted PPC campaigns to reach local food enthusiasts during peak dining hours.</p>
+                        </div>
+                        <div class="case-study-results">
+                            <h4>Results</h4>
+                            <div class="results-grid">
+                                <div class="result-item">
+                                    <span class="result-number">200%</span>
+                                    <span class="result-label">Social Engagement</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">75%</span>
+                                    <span class="result-label">More Reservations</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">40%</span>
+                                    <span class="result-label">Revenue Growth</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-study-image">
+                        <div class="case-study-mockup">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 3 -->
+            <div class="case-study">
+                <div class="case-study-content">
+                    <div class="case-study-text">
+                        <div class="case-study-header">
+                            <h3>Fashion Forward</h3>
+                            <span class="case-study-category">Branding & E-commerce</span>
+                        </div>
+                        <div class="case-study-challenge">
+                            <h4>The Challenge</h4>
+                            <p>An emerging fashion brand needed a complete brand identity and e-commerce platform to launch their online presence and compete with established retailers.</p>
+                        </div>
+                        <div class="case-study-solution">
+                            <h4>Our Solution</h4>
+                            <p>We developed a cohesive brand identity with modern logo design and created a sleek e-commerce website optimized for mobile shopping and conversions.</p>
+                        </div>
+                        <div class="case-study-results">
+                            <h4>Results</h4>
+                            <div class="results-grid">
+                                <div class="result-item">
+                                    <span class="result-number">500%</span>
+                                    <span class="result-label">Online Sales</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">90%</span>
+                                    <span class="result-label">Mobile Traffic</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">4.8</span>
+                                    <span class="result-label">Customer Rating</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-study-image">
+                        <div class="case-study-mockup">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="client-testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Real feedback from businesses we've helped grow</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"BrightWave Digital completely transformed our online presence. The new website is beautiful and our organic traffic has tripled. The team is professional, responsive, and truly understands digital marketing."</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>CEO, TechStart Solutions</span>
+                            </div>
+                            <div class="author-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"The social media campaigns and PPC ads brought so many new customers to our restaurant. We've seen a 40% increase in revenue since working with BrightWave Digital. Highly recommend!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <span>Owner, Local Eats Restaurant</span>
+                            </div>
+                            <div class="author-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"From brand identity to e-commerce development, BrightWave Digital delivered beyond our expectations. Our online sales have increased by 500% and the brand recognition is incredible."</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Emily Rodriguez</h4>
+                                <span>Founder, Fashion Forward</span>
+                            </div>
+                            <div class="author-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Be Our Next Success Story?</h2>
+                <p>Let's discuss how we can help you achieve similar results for your business</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                    <a href="services.html" class="btn btn-secondary">View Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BrightWave Digital</h3>
+                    <p>Your partner in digital growth. We help businesses thrive in the digital landscape with innovative marketing solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">SEO Optimization</a></li>
+                        <li><a href="services.html">Social Media Marketing</a></li>
+                        <li><a href="services.html">PPC Advertising</a></li>
+                        <li><a href="services.html">Content Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope"></i> info@brightwavedigital.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100<br>City, State 12345</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BrightWave Digital LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
