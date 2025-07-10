@@ -178,6 +178,8 @@ class TestimonialSlider {
         // Add slider controls if there are more than 3 testimonials
         const container = document.querySelector('.testimonials-grid');
         container.style.overflow = 'hidden';
+        container.style.display = 'flex';
+        container.style.transition = 'transform 0.5s ease-in-out';
         
         // Create navigation dots
         const dotsContainer = document.createElement('div');
@@ -224,6 +226,18 @@ class TestimonialSlider {
 // Initialize testimonial slider
 document.addEventListener('DOMContentLoaded', () => {
     new TestimonialSlider();
+});
+
+// Make portfolio project links clickable
+document.addEventListener('DOMContentLoaded', () => {
+    const portfolioLinks = document.querySelectorAll('.portfolio-link');
+    portfolioLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const project = link.getAttribute('data-project');
+            alert(`Project link clicked: ${project}. You can update this to navigate to the actual project URL later.`);
+        });
+    });
 });
 
 // Utility function for smooth animations
@@ -580,6 +594,98 @@ function enhanceAllForms() {
     });
 }
 
+// Portfolio Filter Functionality
+function initializePortfolioFilter() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    
+    if (filterButtons.length === 0 || portfolioItems.length === 0) return;
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
+            
+            const filterValue = button.getAttribute('data-filter');
+            
+            portfolioItems.forEach(item => {
+                if (filterValue === 'all' || item.getAttribute('data-category').includes(filterValue)) {
+                    item.classList.remove('hidden');
+                    item.classList.add('show');
+                } else {
+                    item.classList.add('hidden');
+                    item.classList.remove('show');
+                }
+            });
+        });
+    });
+}
+
+// Portfolio Testimonial Slider (for portfolio page)
+class PortfolioTestimonialSlider {
+    constructor() {
+        this.currentSlide = 0;
+        this.slides = document.querySelectorAll('.testimonial-slide');
+        this.dots = document.querySelectorAll('.dot');
+        this.prevBtn = document.querySelector('.prev-btn');
+        this.nextBtn = document.querySelector('.next-btn');
+        
+        if (this.slides.length > 0) {
+            this.init();
+        }
+    }
+    
+    init() {
+        // Add event listeners for navigation buttons
+        if (this.prevBtn) {
+            this.prevBtn.addEventListener('click', () => this.prevSlide());
+        }
+        
+        if (this.nextBtn) {
+            this.nextBtn.addEventListener('click', () => this.nextSlide());
+        }
+        
+        // Add event listeners for dots
+        this.dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => this.goToSlide(index));
+        });
+        
+        // Auto-play slider
+        this.startAutoPlay();
+    }
+    
+    goToSlide(index) {
+        // Remove active class from current slide and dot
+        this.slides[this.currentSlide].classList.remove('active');
+        this.dots[this.currentSlide].classList.remove('active');
+        
+        // Update current slide
+        this.currentSlide = index;
+        
+        // Add active class to new slide and dot
+        this.slides[this.currentSlide].classList.add('active');
+        this.dots[this.currentSlide].classList.add('active');
+    }
+    
+    nextSlide() {
+        const nextIndex = (this.currentSlide + 1) % this.slides.length;
+        this.goToSlide(nextIndex);
+    }
+    
+    prevSlide() {
+        const prevIndex = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
+        this.goToSlide(prevIndex);
+    }
+    
+    startAutoPlay() {
+        setInterval(() => {
+            this.nextSlide();
+        }, 5000); // Change slide every 5 seconds
+    }
+}
+
 // Initialize all interactive features
 document.addEventListener('DOMContentLoaded', () => {
     console.log('BrightWave Digital website loaded successfully!');
@@ -592,6 +698,12 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Enhance all other forms
     enhanceAllForms();
+    
+    // Initialize portfolio filter
+    initializePortfolioFilter();
+    
+    // Initialize portfolio testimonial slider
+    new PortfolioTestimonialSlider();
     
     // Add smooth hover effects to buttons
     const buttons = document.querySelectorAll('.btn');
